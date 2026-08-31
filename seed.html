@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ใส่ข้อมูลตัวอย่าง · LeaveEasy</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/nav.js" defer></script>
+  <script src="js/data.js" defer></script>
+  <script src="js/seed.js" type="module"></script>
+</head>
+<body>
+  <div id="nav"></div>
+
+  <div class="container">
+    <h1>ใส่ข้อมูลตัวอย่างลง Firestore</h1>
+    <p class="subtitle">
+      หน้านี้ไม่ใช่ 1 ใน 5 หน้าจอของระบบ — เป็นเครื่องมือใช้ครั้งเดียวตอนตั้งค่าสัปดาห์ที่ 6
+      คัดลอกข้อมูลตัวอย่างจาก <code>js/data.js</code> ขึ้น Firestore
+    </p>
+
+    <div class="card">
+      <p>
+        กดปุ่มด้านล่างเพื่อสร้างโฟลเดอร์ <code>users</code> · <code>leaveTypes</code> · <code>leaveRequests</code>
+        พร้อมโฟลเดอร์ย่อย <code>approvals</code> ในแต่ละใบลา
+      </p>
+      <p class="hint">กดซ้ำได้อย่างปลอดภัย — ข้อมูลจะถูกเขียนทับด้วยชุดเดิม ไม่สร้างซ้ำซ้อน</p>
+      <div class="btn-row">
+        <button id="seedBtn" class="btn">ใส่ข้อมูลตัวอย่าง</button>
+      </div>
+      <div id="log" style="margin-top:14px"></div>
+    </div>
+  </div>
+</body>
+</html>
